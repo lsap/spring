@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MetController {
 
-    @GetMapping("/customerportal")
+    @GetMapping("/tme")
     public UserResponse getUser() {
         return new UserResponse();
     }
