@@ -1,6 +1,7 @@
 package org.met.assistant.api;
 
 import lombok.RequiredArgsConstructor;
+import org.met.assistant.model.UserResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MetController {
 
     @GetMapping("/customerportal")
-    public String getUser() {
-        return "{\"success\":1}";
+    public UserResponse getUser() {
+        return new UserResponse();
     }
 }
